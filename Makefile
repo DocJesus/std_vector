@@ -1,6 +1,6 @@
 SRC = vec.cpp main.cpp
 
-CXXFLAGS += -std=c++14 -Werror -Wextra -Wall -I./Include
+CXXFLAGS += -std=c++17 -Werror -Wextra -Wall -I./Include
 LOADLIBES = -lm
 
 OBJ = $(SRC:.cpp=.o)

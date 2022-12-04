@@ -5,9 +5,8 @@
 
 int main()
 {
-    // Create a vector containing integers
-    // vector<int> v = {7, 5, 16, 8}; 
-    vec<int> v;
+    vec<int> v = {7, 5, 8};
+    // vec<int> v;
 
     // int* toto = new int[8];
 

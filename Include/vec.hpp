@@ -17,6 +17,20 @@ class vec
             this->memory_size = 0;
             this->elem_size = 0;
         }
+        vec(std::initializer_list<T> l)
+        {
+            int size = std::size(l);
+            this->data = new T[size * 2];
+            int i = 0;
+            
+            for (auto n : l)
+            {
+                this->data[i] = n;
+                i++;
+            }
+            this->elem_size = size;
+            this->memory_size = size * 2;
+        }
         ~vec()
         {
             delete this->data;
